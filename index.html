@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>CRUD</h1>
+    <section class="crud">
+      <article>
+        <h2 class="crud-title">AGREGAR PRODUCTO</h2>
+        <form class="crud-form">
+          <input
+            class="input-label"
+            type="text"
+            name="amount"
+            placeholder="Cantidad"
+            required
+          />
+          <input
+            class="input-label"
+            type="text"
+            name="name"
+            placeholder="Nombre del producto"
+            required
+          />
+
+          <input
+            class="input-label"
+            type="text"
+            name="price"
+            placeholder="Precio"
+            required
+          />
+          <input class="input-submit" type="submit" value="Guardar" />
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+
+      <article class="data-request">
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+
+    <template id="crud-template">
+      <tr>
+        <td class="amount"></td>
+        <td class="name"></td>
+        <td class="price"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Borrar</button>
+        </td>
+      </tr>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "name": "Ventana 150x180",
+      "amount": "3",
+      "price": "30000",
+      "id": 1
+    },
+    {
+      "name": "Ventana 150x150",
+      "amount": "2",
+      "price": "12500",
+      "id": 2
+    },
+    {
+      "name": "Puerta 80x200",
+      "amount": "1",
+      "price": "13560",
+      "id": 4
+    }
+  ]
+}
