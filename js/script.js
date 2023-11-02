@@ -1,9 +1,9 @@
 const $d = document;
-const $table = $d.querySelector(".crud-table");
-const $form = $d.querySelector(".crud-form");
-const $title = $d.querySelector(".crud-title");
-const $template = $d.getElementById("crud-template").content;
-const $fragement = $d.createDocumentFragment();
+const $table = $d.querySelector(".crud-table"); //Tabla de productos
+const $form = $d.querySelector(".crud-form"); //Formulario para agregar-editar productos
+const $title = $d.querySelector(".crud-title"); //Titulo del formulario 
+const $template = $d.getElementById("crud-template").content; //Plantilla de fila de producto
+const $fragement = $d.createDocumentFragment(); //Fragmento de documento para optimizar la manipulación del DOM
 
 const getAll = async () => {
   try {
